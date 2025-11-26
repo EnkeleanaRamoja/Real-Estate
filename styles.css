@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45); 
+    z-index: 0;
+    pointer-events: none;
+}
+
+.header {
+    width: 100%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px 24px; 
+    background: transparent;
+    position: relative; 
+    z-index: 1;
+    color: white;
+}
+
+.header h1 {
+    font-size: 1.25rem; 
+    color:#fff; 
+    margin: 0;
+}
+
+.navbar {
+    display: flex; 
+    align-items: center;
+    gap: 18px;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: background .12s, color .12s;
+}
+.navbar a:hover {
+    background: rgba(255,255,255,0.06);
+}
+
+.navbar button { 
+    border: 1px solid rgba(255,255,255,0.6); 
+    background: transparent; 
+    color: #fff; 
+    padding: 6px 10px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    font-weight: 600;
+}
+.navbar button.signup {
+    background: var(--accent, #00aaff);
+    border-color: transparent;
+    color: #fff; 
+}
+
+.container { 
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero .container { 
+    position: relative; 
+    z-index: 1;
+    padding: 80px 0 100px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-top: 120px;
+}
+
+.hero p {
+    color: #ffffff; 
+    margin-bottom: 12px;
+    align-items: center;
+    margin-left: 120px;
+}
+
+.btn {
+    display: inline-block; 
+    background: var(--accent,#00aaff);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 145px;
+    margin-left: 170px;
+}
+
+@media (max-width:768px){
+  .header{padding:14px 16px}
+  .navbar{gap:12px;flex-wrap:wrap}
+  .navbar a{font-size:16px}
+  .hero .container{padding:60px 14px}
+}
