@@ -3,7 +3,7 @@
     padding: 0; 
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    
 }
 
 .hero {
@@ -21,7 +21,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45); 
+    background: linear-gradient(180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.20) 60%, rgba(0,0,0,0.35) 100%);
     z-index: 0;
     pointer-events: none;
 }
@@ -117,4 +117,91 @@
   .navbar{gap:12px;flex-wrap:wrap}
   .navbar a{font-size:16px}
   .hero .container{padding:60px 14px}
+}
+
+.main {
+    padding: 60px 0;
+    background-color: #000000;
+    color: #ffffff;
+    position: relative;
+    min-height: 80vh;
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('Background-re.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px) brightness(0.50); 
+    transform: scale(1.03); 
+    z-index: 0;
+    pointer-events: none;
+}
+
+.main::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.main > *{position: relative; z-index: 2}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    align-items: center;
+    
+}
+
+.info h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.info p {
+    margin-bottom: -30px;
+}
+
+.info ul {
+    margin-right: 865px;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.card {
+  background: rgb(206, 206, 206);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.card h4 {
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
 }
