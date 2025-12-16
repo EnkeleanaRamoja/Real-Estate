@@ -4,12 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
-
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    /* Background */
     body {
       margin: 0;
       padding: 0;
@@ -20,7 +17,6 @@
       font-family: 'Poppins', sans-serif;
       overflow: hidden;
 
-      /* Luxury mansion background */
       background: 
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.8)),
         url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80')
@@ -34,7 +30,6 @@
       to { background-size: 110%; }
     }
 
-    /* Dark overlay */
     body::before {
       content: "";
       position: absolute;
@@ -43,7 +38,6 @@
       z-index: -1;
     }
 
-    /* Floating particles */
     .particle {
       position: absolute;
       width: 8px;
@@ -59,7 +53,6 @@
       to { transform: translateY(-10vh); opacity: 1; }
     }
 
-    /* Register box */
     .register-box {
       width: 400px;
       padding: 40px;
@@ -90,6 +83,7 @@
 
     .input-field {
       margin-bottom: 22px;
+      margin-left: -25px;
     }
 
     .input-field input {
@@ -119,7 +113,7 @@
       font-size: 17px;
       border: none;
       border-radius: 12px;
-      background: linear-gradient(135deg, #2f9e44, #1c7ed6);
+      background:  rgb(72, 124, 65);
       color: #fff;
       cursor: pointer;
       transition: 0.3s;
@@ -152,7 +146,6 @@
 </head>
 <body>
 
-  <!-- Floating particles -->
   <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
   <div class="particle" style="left: 28%; animation-delay: 1s;"></div>
   <div class="particle" style="left: 50%; animation-delay: 2s;"></div>
@@ -178,12 +171,42 @@
       <input type="password" placeholder="Confirm Password">
     </div>
 
-    <button>Create Account</button>
+    <button type="button" onclick="registerUser()">Create Account</button>
 
     <div class="footer">
-      Already have an account? <a href="#">Login</a>
+      Already have an account? <a href="login.html">Login</a>
     </div>
   </div>
 
+  <script>
+    function registerUser() {
+      const fullName = document.querySelector('input[placeholder="Full Name"]').value.trim();
+      const email = document.querySelector('input[placeholder="Email Address"]').value.trim();
+      const password = document.querySelector('input[placeholder="Password"]').value;
+      const confirmPassword = document.querySelector('input[placeholder="Confirm Password"]').value;
+
+      if (!fullName || !email || !password || !confirmPassword) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        alert('Passwords do not match');
+        return;
+      }
+
+      if (password.length < 6) {
+        alert('Password must be at least 6 characters');
+        return;
+      }
+
+      localStorage.setItem('registeredEmail', email);
+      localStorage.setItem('registeredPassword', password);
+      localStorage.setItem('registeredName', fullName);
+
+      alert('Registration successful! You can now login.');
+      window.location.href = 'login.html';
+    }
+  </script>
 </body>
 </html>

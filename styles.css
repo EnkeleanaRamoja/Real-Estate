@@ -76,29 +76,70 @@
     color: #fff; 
 }
 
+.login,
+.signup {
+    border: 2px solid #fff !important;
+    background: transparent !important;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.login:hover,
+.signup:hover {
+    background: rgba(255,255,255,0.1) !important;
+}
+
 .container { 
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-bottom: 103px;
 }
 
 .hero .container { 
     position: relative; 
     z-index: 1;
     padding: 80px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero .container > div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.hero .container button {
+    display: inline-block;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 0px;
     margin-top: 120px;
+    text-shadow: #000000 2px 2px 10px;
+    letter-spacing: 2px;
 }
 
 .hero p {
+    text-shadow: #000000 2px 2px 10px;
     color: #ffffff; 
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     align-items: center;
-    margin-left: 120px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: larger;
+    letter-spacing: 1px;
 }
 
 .btn {
@@ -270,4 +311,204 @@
     margin-top: 0px;
 }
 
+/* ===============================
+   RESPONSIVE DESIGN - TABLETS
+================================ */
+@media (max-width: 768px) {
+    .header {
+        padding: 14px 16px;
+    }
 
+    .navbar {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .hero .container {
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .info h1 {
+        font-size: 36px;
+    }
+
+    .two-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact {
+        width: 95% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact .field,
+    .contact .field1 {
+        width: 100% !important;
+        margin-left: 10px !important;
+    }
+
+    .contact .btn {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+/* ===============================
+   RESPONSIVE DESIGN - MOBILE/iPhone
+================================ */
+@media (max-width: 480px) {
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .header {
+        padding: 10px 12px;
+        flex-wrap: wrap;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 6px 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero .container {
+        padding: 20px 12px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .main {
+        padding: 20px 0;
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .info ul {
+        margin-right: 0 !important;
+        margin-left: 20px;
+    }
+
+    .two-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h4 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+
+    .contact {
+        width: 98% !important;
+        margin: 20px auto;
+        padding: 0;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    .contact .field {
+        width: 95% !important;
+        height: 40px;
+        margin-left: 8px !important;
+    }
+
+    .contact .field1 {
+        width: 95% !important;
+        height: 80px;
+        margin-left: 8px !important;
+    }
+
+    .contact .btn {
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 95%;
+        height: 40px;
+    }
+
+    .footer {
+        padding: 15px 10px;
+        font-size: 12px;
+    }
+
+    .page-title {
+        margin: 30px 20px;
+    }
+
+    .page-title h2 {
+        font-size: 24px;
+    }
+
+    .page-title p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,12 @@
+/* Global font override for login page (keeps consistent with site) */
+:root {
+    --site-font: Arial, Helvetica, sans-serif;
+    --site-weight: 400;
+}
+
+body, button, input, textarea, select, a, p, h1, h2, h3, h4, h5, h6, span, li, label, div {
+    font-family: var(--site-font) !important;
+    font-weight: var(--site-weight) !important;
+}
+
+/* Add any login-specific rules below */

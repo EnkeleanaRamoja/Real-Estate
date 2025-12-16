@@ -1,16 +1,57 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body {
+    background-color: #2d3d2d;
+    color: #ffffff;
+}
+
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.hero::before {
+    display: none;
+}
+
+.header {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    color:#fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    gap: 22px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: rgba(255,255,255,0.12);
 }
 
 .about-container {
@@ -33,8 +74,8 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 100px rgba(134, 134, 134, 0.45);
-}
+    box-shadow: 100px rgba(218, 164, 164, 0.45);
+        }
 
 @media (max-width:900px){
     .about-container{flex-direction:column;align-items:flex-start}
@@ -76,47 +117,6 @@
     position: relative; 
     z-index: 1;
     color: white;
-}
-
-.header h1 {
-    font-size: 1.25rem; 
-    color:#fff; 
-    margin: 0;
-}
-
-.navbar {
-    display: flex; 
-    align-items: center;
-    gap: 18px;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 6px 8px;
-    border-radius: 4px;
-    transition: background .12s, color .12s;
-}
-
-.navbar a:hover {
-    background: rgba(255,255,255,0.06);
-}
-
-.navbar button { 
-    border: 1px solid rgba(255,255,255,0.6); 
-    background: transparent; 
-    color: #fff; 
-    padding: 6px 10px; 
-    border-radius: 6px; 
-    cursor: pointer; 
-    font-weight: 600;
-}
-
-.navbar button.signup {
-    background: var(--accent, #00aaff);
-    border-color: transparent;
-    color: #fff; 
 }
 
 .container { 
@@ -216,4 +216,133 @@
 .footer img {
     vertical-align: middle;
     margin-right: 10px;
+}
+
+:root {
+    --site-font: Arial, Helvetica, sans-serif;
+    --site-weight: 400;
+}
+
+body, button, input, textarea, select, a, p, h1, h2, h3, h4, h5, h6, span, li, label, div {
+    font-family: var(--site-font) !important;
+    font-weight: var(--site-weight) !important;
+}
+/* ===============================
+   RESPONSIVE DESIGN - TABLETS
+================================ */
+@media (max-width: 768px) {
+    .header {
+        padding: 14px 16px;
+    }
+
+    .navbar {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .container {
+        margin-left: 20px;
+    }
+
+    .contact {
+        width: 95% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact .field,
+    .contact .field1 {
+        width: 100% !important;
+        margin-left: 10px !important;
+    }
+
+    .contact .btn {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+/* ===============================
+   RESPONSIVE DESIGN - MOBILE/iPhone
+================================ */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 12px;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 6px 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 13px;
+    }
+
+    .contact {
+        width: 98% !important;
+        margin: 20px auto;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    .contact .field {
+        width: 95% !important;
+        height: 40px;
+        margin-left: 8px !important;
+    }
+
+    .contact .field1 {
+        width: 95% !important;
+        height: 80px;
+        margin-left: 8px !important;
+    }
+
+    .contact .btn {
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 95%;
+        height: 40px;
+    }
+
+    .footer {
+        padding: 15px 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer h3,
+    .footer p {
+        margin-left: 10px;
+        font-size: 12px;
+    }
 }

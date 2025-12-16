@@ -4,63 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body style="background-color: rgb(45, 61, 45);">
     <section class="hero">
         <header class="header">
             <h1>Real Estate</h1>
             <nav class="navbar">
                 <a href="Home.html">Home</a>
-                <a href="About.html">About</a>
-                <a href="Services.html">Services</a>
+                <a href="#about">About</a>
+                <a href="Listings.html">Listings</a>
                 <a href="Contact.html">Contact</a>
-                <button class="login">Login</button>
-                <button class="signup">Sign Up</button>
+                
             </nav>
         </header>
         <div class="container">
-            <h2>Your Dream Home Awaits</h2>
-            <p>Invest today in your dream house.</p>
-            <a href="Services.html" class="btn">Explore Listings</a>
+            <h2 class="head" style="text-align: left;">Unlock your <br> perfect home</h2>
+            <button class="view"><a style="color: white; text-decoration: none;" href="Listings.html">EXPLORE LISTINGS</a></button>
         </div>
+        <br><br><br><br><br><br><br><br><br>
     </section>
+    <section class="services" style="background-color: rgb(45, 61, 45); padding: 80px 40px; color: white;">
+    <h2 style="text-align: center; font-size: 40px; margin-bottom: 60px; text-shadow: 4px 4px 6px rgba(0,0,0,0.5);">
+        Our Services
+    </h2>
 
-    <section class="main">
-        <div class="info">
-            <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">WHY CHOOSE US?</h1>
-            <p>We provide the best real estate services with a wide range of listings to choose from. Our experienced agents are here to help you find the perfect home.</p>
-            </div>
-            <div class="two-grid">
-            <div class="card">
-                <h4>Expert Local Knowledge</h4>
-                <p>We understand your neighborhood, market trends, and property values — helping you buy or sell with confidence.</p>
-            </div>
-            <div class="card">
-                <h4>Trusted & Transparent Service</h4>
-                <p>We prioritize honesty, clear communication, and your best interests in every step of the process.</p>
-            </div>
-            <div class="card">
-                <h4>Proven Results</h4>
-                <p>Hundreds of successful transactions and high client satisfaction make us one of the most trusted agencies in the area.</p>
-            </div>
-            <div class="card">
-                <h4>Full-Service Support</h4>
-                <p>From staging and marketing to negotiation and closing, we handle everything for you.</p>
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+        <div style="background:#1f2b1f; padding:40px; width:280px; border-radius:12px; box-shadow:0 6px 12px rgba(0,0,0,0.5); text-align:center;">
+            <h3>Buying</h3>
+            <p>We help you find the perfect property that fits your lifestyle and budget.</p>
+        </div>
+
+        <div style="background:#1f2b1f; padding:40px; width:280px; border-radius:12px; box-shadow:0 6px 12px rgba(0,0,0,0.5); text-align:center;">
+            <h3>Selling</h3>
+            <p>Professional pricing, marketing, and negotiation to sell your property faster.</p>
+        </div>
+
+        <div style="background:#1f2b1f; padding:40px; width:280px; border-radius:12px; box-shadow:0 6px 12px rgba(0,0,0,0.5); text-align:center;">
+            <h3>Investing</h3>
+            <p>Smart investment opportunities backed by market expertise.</p>
+        </div>
+    </div>
+</section>
+<section class="featured" style="background-color:#1f2b1f; padding:80px 40px; color:white;">
+    <h2 style="text-align:center; font-size:40px; margin-bottom:60px;">
+        Featured Properties
+    </h2>
+
+    <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap;">
+        <div style="background:#2d3d2d; width:300px; border-radius:12px; overflow:hidden; box-shadow:0 6px 12px rgba(0,0,0,0.5);">
+            <img src="house1.jpg" style="width:100%; height:200px; object-fit:cover;">
+            <div style="padding:20px;">
+                <h4>Modern Family Home</h4>
+                <p>$320,000 · 3 Beds · 2 Baths</p>
             </div>
         </div>
-        <div class="contact">
-            <h2>Contact Form</h2>
-            <input class="field" type="text" placeholder="   Name"><br>
-            <input class="field" type="text" placeholder="   Lastname"><br>
-            <input class="field" type="email" placeholder="   Email"><br>
-            <input class="field" type="number" placeholder="   Phonenumber"><br>
-            <textarea class="field1" placeholder="   Message"></textarea><br>
-            <button class="btn">Send</button>
+
+        <div style="background:#2d3d2d; width:300px; border-radius:12px; overflow:hidden; box-shadow:0 6px 12px rgba(0,0,0,0.5);">
+            <img src="house2.jpg" style="width:100%; height:200px; object-fit:cover;">
+            <div style="padding:20px;">
+                <h4>Luxury Apartment</h4>
+                <p>$450,000 · City Center</p>
+            </div>
         </div>
-    </section>
-    <footer class="footer">
-        <p>&copy; 2024 Real Estate. All rights reserved.</p>
-    </footer>
+
+        <div style="background:#2d3d2d; width:300px; border-radius:12px; overflow:hidden; box-shadow:0 6px 12px rgba(0,0,0,0.5);">
+            <img src="house3.jpg" style="width:100%; height:200px; object-fit:cover;">
+            <div style="padding:20px;">
+                <h4>Cozy Suburban House</h4>
+                <p>$280,000 · Quiet Area</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="testimonials" style="background-color: rgb(45, 61, 45); padding: 80px 40px; color: white;">
+    <h2 style="text-align: center; font-size: 40px; margin-bottom: 50px; text-shadow: 4px 4px 6px rgba(0,0,0,0.5);">
+        Trusted by Happy Clients
+    </h2>
+
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <div style="background: #1f2b1f; padding: 30px; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+            <p>"Professional, honest, and very supportive throughout the entire process."</p>
+            <h4 style="margin-top: 15px;">— Sarah M.</h4>
+        </div>
+
+        <div style="background: #1f2b1f; padding: 30px; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+            <p>"They helped us find our dream home faster than we expected."</p>
+            <h4 style="margin-top: 15px;">— Mark & Linda</h4>
+        </div>
+
+        <div style="background: #1f2b1f; padding: 30px; width: 300px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+            <p>"Excellent market knowledge and great communication."</p>
+            <h4 style="margin-top: 15px;">— David R.</h4>
+        </div>
+    </div>
+</section>
+
+<section class="stats" style="background-color: #1f2b1f; padding: 60px 40px; color: white;">
+    <div style="display: flex; justify-content: center; gap: 60px; text-align: center; flex-wrap: wrap;">
+        <div>
+            <h2 style="font-size: 40px;">500+</h2>
+            <p>Homes Sold</p>
+        </div>
+        <div>
+            <h2 style="font-size: 40px;">98%</h2>
+            <p>Happy Clients</p>
+        </div>
+        <div>
+            <h2 style="font-size: 40px;">10+</h2>
+            <p>Years Experience</p>
+        </div>
+    </div>
+</section>
 </body>
 </html>
