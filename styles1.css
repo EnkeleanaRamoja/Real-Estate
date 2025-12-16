@@ -227,3 +227,122 @@ body, button, input, textarea, select, a, p, h1, h2, h3, h4, h5, h6, span, li, l
     font-family: var(--site-font) !important;
     font-weight: var(--site-weight) !important;
 }
+/* ===============================
+   RESPONSIVE DESIGN - TABLETS
+================================ */
+@media (max-width: 768px) {
+    .header {
+        padding: 14px 16px;
+    }
+
+    .navbar {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .container {
+        margin-left: 20px;
+    }
+
+    .contact {
+        width: 95% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact .field,
+    .contact .field1 {
+        width: 100% !important;
+        margin-left: 10px !important;
+    }
+
+    .contact .btn {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+/* ===============================
+   RESPONSIVE DESIGN - MOBILE/iPhone
+================================ */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 12px;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 6px 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .container p {
+        font-size: 13px;
+    }
+
+    .contact {
+        width: 98% !important;
+        margin: 20px auto;
+    }
+
+    .contact h2 {
+        font-size: 24px;
+        margin: 15px;
+    }
+
+    .contact .field {
+        width: 95% !important;
+        height: 40px;
+        margin-left: 8px !important;
+    }
+
+    .contact .field1 {
+        width: 95% !important;
+        height: 80px;
+        margin-left: 8px !important;
+    }
+
+    .contact .btn {
+        margin-left: 8px;
+        margin-right: 8px;
+        width: 95%;
+        height: 40px;
+    }
+
+    .footer {
+        padding: 15px 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .footer h3,
+    .footer p {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+}
