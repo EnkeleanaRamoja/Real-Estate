@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listings | Real Estate</title>
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="listings-extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<section class="hero">
+    <header class="header">
+        <h1>Real Estate</h1>
+        <nav class="navbar">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Listings.html" class="active">Listings</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="page-title">
+        <h2>Available Properties</h2>
+        <p>Carefully selected properties designed for comfort and investment</p>
+    </div>
+
+    <div class="filter-bar">
+        <input type="text" id="searchInput" placeholder="Search by location or property name">
+
+        <select id="typeFilter">
+            <option value="">All Types</option>
+            <option value="apartment">Apartment</option>
+            <option value="villa">Villa</option>
+            <option value="commercial">Commercial</option>
+        </select>
+
+        <select id="priceFilter">
+            <option value="">Any Price</option>
+            <option value="0-150000">€50k – €150k</option>
+            <option value="150000-300000">€150k – €300k</option>
+            <option value="300000-9999999">€300k+</option>
+        </select>
+
+        <button class="btn" id="filterBtn">Search</button>
+    </div>
+
+    <section class="listings-section">
+        <div class="listings-grid">
+
+            <div class="property-card"
+                 data-title="luxury villa"
+                 data-location="prishtina"
+                 data-type="villa"
+                 data-price="450000">
+
+                <img src="properties1.jpg" alt="Luxury Villa">
+                <div class="property-info">
+                    <h3>Luxury Villa</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Prishtina</p>
+                    <p class="price">€450,000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-bed"></i> 3 Beds</span>
+                        <span><i class="fas fa-bath"></i> 3 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 280 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card"
+                 data-title="modern apartment"
+                 data-location="tirana"
+                 data-type="apartment"
+                 data-price="155000">
+
+                <img src="properties2.jpg" alt="Modern Apartment">
+                <div class="property-info">
+                    <h3>Modern Apartment</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Tirana</p>
+                    <p class="price">€155,000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-bed"></i> 3 Beds</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                        <span><i class="fas fa-ruler-combined"></i> 110 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card"
+                 data-title="commercial space"
+                 data-location="durres"
+                 data-type="commercial"
+                 data-price="360000">
+
+                <img src="properties3.jpg" alt="Commercial Space">
+                <div class="property-info">
+                    <h3>Commercial Space</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Durrës</p>
+                    <p class="price">€360,000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-building"></i> Office</span>
+                        <span><i class="fas fa-ruler-combined"></i> 240 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+     <section class="listings-section">
+        <div class="listings-grid">
+
+            <div class="property-card"
+                 data-title="luxury villa"
+                 data-location="tirana"
+                 data-type="villa"
+                 data-price="620000">
+
+                <img src="properties4.jpg" alt="Luxury Villa">
+                <div class="property-info">
+                    <h3>Luxury Villa</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Tirana</p>
+                    <p class="price">€620.000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-bed"></i> 4 Beds</span>
+                        <span><i class="fas fa-bath"></i> 4 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 340 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card"
+                 data-title="modern apartment"
+                 data-location="durres"
+                 data-type="apartment"
+                 data-price="135000">
+
+                <img src="properties5.jpg" alt="Modern Apartment">
+                <div class="property-info">
+                    <h3>Modern Apartment</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Durrës</p>
+                    <p class="price">€135,000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-bed"></i> 2 Beds</span>
+                        <span><i class="fas fa-bath"></i> 1 Bath</span>
+                        <span><i class="fas fa-ruler-combined"></i> 90 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card"
+                 data-title="commercial space"
+                 data-location="prishtina"
+                 data-type="commercial"
+                 data-price="320000">
+
+                <img src="properties6.jpg" alt="Commercial Space">
+                <div class="property-info">
+                    <h3>Commercial Space</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Prishtina</p>
+                    <p class="price">€320,000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-building"></i> Office</span>
+                        <span><i class="fas fa-ruler-combined"></i> 190 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+     <section class="listings-section">
+        <div class="listings-grid">
+
+            <div class="property-card"
+                 data-title="luxury villa"
+                 data-location="tirana"
+                 data-type="villa"
+                 data-price="480000">
+
+                <img src="properties7.jpg" alt="Luxury Villa">
+                <div class="property-info">
+                    <h3>Luxury Villa</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Gjakovë</p>
+                    <p class="price">€480,000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-bed"></i> 4 Beds</span>
+                        <span><i class="fas fa-bath"></i> 3 Baths</span>
+                        <span><i class="fas fa-ruler-combined"></i> 320 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card"
+                 data-title="modern apartment"
+                 data-location="prishtina"
+                 data-type="apartment"
+                 data-price="115000">
+
+                <img src="properties8.jpg" alt="Modern Apartment">
+                <div class="property-info">
+                    <h3>Modern Apartment</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Prishtina</p>
+                    <p class="price">€115,000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-bed"></i> 1 Beds</span>
+                        <span><i class="fas fa-bath"></i> 1 Bath</span>
+                        <span><i class="fas fa-ruler-combined"></i> 65 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="property-card"
+                 data-title="commercial space"
+                 data-location="gjakova"
+                 data-type="commercial"
+                 data-price="290000">
+
+                <img src="properties9.jpg" alt="Commercial Space">
+                <div class="property-info">
+                    <h3>Commercial Space</h3>
+                    <p class="location"><i class="fas fa-location-dot"></i> Gjakovë</p>
+                    <p class="price">€290,000</p>
+                    <div class="property-details">
+                        <span><i class="fas fa-building"></i> Office</span>
+                        <span><i class="fas fa-ruler-combined"></i> 210 m²</span>
+                    </div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="cta">
+        <h2>Can’t find what you’re looking for?</h2>
+        <p>Our agents are ready to help you find the perfect property.</p>
+        <a href="Contact.html" class="btn">Contact Us</a>
+    </section>
+
+</section>
+
+<script>
+function filterProperties() {
+    const searchValue = document.getElementById("searchInput").value.toLowerCase();
+    const typeValue = document.getElementById("typeFilter").value;
+    const priceValue = document.getElementById("priceFilter").value;
+
+    const cards = document.querySelectorAll(".property-card");
+
+    cards.forEach(card => {
+        const title = card.dataset.title;
+        const location = card.dataset.location;
+        const type = card.dataset.type;
+        const price = parseInt(card.dataset.price);
+
+        const matchesSearch =
+            title.includes(searchValue) ||
+            location.includes(searchValue);
+
+        const matchesType =
+            !typeValue || type === typeValue;
+
+        let matchesPrice = true;
+        if (priceValue) {
+            const [min, max] = priceValue.split("-").map(Number);
+            matchesPrice = price >= min && price <= max;
+        }
+
+        card.style.display =
+            matchesSearch && matchesType && matchesPrice
+            ? "block"
+            : "none";
+    });
+}
+
+document.getElementById("filterBtn").addEventListener("click", filterProperties);
+document.getElementById("searchInput").addEventListener("keyup", filterProperties);
+document.getElementById("typeFilter").addEventListener("change", filterProperties);
+document.getElementById("priceFilter").addEventListener("change", filterProperties);
+</script>
+
+</body>
+</html>

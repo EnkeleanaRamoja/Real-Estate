@@ -46,7 +46,6 @@
       to { transform: translateY(-10vh); opacity: 1; }
     }
 
-    /* Login box glass effect */
     .login-box {
       width: 380px;
       padding: 40px;
@@ -101,13 +100,30 @@
       box-shadow: 0 0 8px rgba(255,255,255,0.3);
     }
 
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.85;
+    }
+
+    .footer a {
+      color: #74c0fc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
     button {
       width: 100%;
       padding: 14px;
       font-size: 18px;
       border: none;
       border-radius: 12px;
-      background: linear-gradient(135deg, #2f9e44, #1c7ed6);
+      background:  rgb(72, 124, 65);
       color: #fff;
       cursor: pointer;
       transition: 0.3s;
@@ -130,8 +146,6 @@
 </head>
 
 <body>
-
-  <!-- Floating particles -->
   <div class="particle" style="left: 12%; animation-delay: 0s;"></div>
   <div class="particle" style="left: 30%; animation-delay: 1s;"></div>
   <div class="particle" style="left: 55%; animation-delay: 2s;"></div>
@@ -148,21 +162,51 @@
     <div class="input-field">
       <input type="password" id="password" placeholder="Enter Password">
     </div>
+    
 
     <button onclick="login()">Login</button>
+
+    <div class="footer">
+      You don't have an account? <a href="register.html">Register</a>
+    </div>
 
     <p class="error" id="errorMsg">Incorrect username or password</p>
   </div>
 
+
   <script>
+    window.addEventListener('load', function() {
+      const savedEmail = localStorage.getItem('registeredEmail');
+      if (savedEmail) {
+        document.getElementById('username').value = savedEmail;
+      }
+      document.getElementById("errorMsg").style.display = "none";
+    });
+
     function login() {
-      const user = document.getElementById("username").value;
+      const user = document.getElementById("username").value.trim();
       const pass = document.getElementById("password").value;
 
-      // Demo login data (you can connect it to PHP/MySQL later)
-      if (user === "admin" && pass === "2025") {
+      document.getElementById("errorMsg").style.display = "none";
+
+      const registeredEmail = localStorage.getItems('registeredEmail');
+      const registeredPassword = localStorage.getItems('registeredPassword');
+
+      console.log('User input:', user);
+      console.log('Stored email:', registeredEmail);
+      console.log('User pass:', pass);
+      console.log('Stored pass:', registeredPassword);
+
+      if (registeredEmail && registeredPassword && user === registeredEmail && pass === registeredPassword) {
         window.location.href = "Home.html";
-      } else {
+        return;
+      } 
+
+      else if (user === "admin" && pass === "2025") {
+        window.location.href = "Home.html";
+        return;
+      } 
+      else {
         document.getElementById("errorMsg").style.display = "block";
       }
     }

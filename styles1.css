@@ -1,16 +1,57 @@
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body {
+    background-color: #2d3d2d;
+    color: #ffffff;
+}
+
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+.hero::before {
+    display: none;
+}
+
+.header {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    color:#fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    gap: 22px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background: rgba(255,255,255,0.12);
 }
 
 .about-container {
@@ -33,7 +74,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 100px rgba(134, 134, 134, 0.45);
+    box-shadow: 100px rgba(218, 164, 164, 0.45);
         }
 
 @media (max-width:900px){
@@ -76,47 +117,6 @@
     position: relative; 
     z-index: 1;
     color: white;
-}
-
-.header h1 {
-    font-size: 1.25rem; 
-    color:#fff; 
-    margin: 0;
-}
-
-.navbar {
-    display: flex; 
-    align-items: center;
-    gap: 18px;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 6px 8px;
-    border-radius: 4px;
-    transition: background .12s, color .12s;
-}
-
-.navbar a:hover {
-    background: rgba(255,255,255,0.06);
-}
-
-.navbar button { 
-    border: 1px solid rgba(255,255,255,0.6); 
-    background: transparent; 
-    color: #fff; 
-    padding: 6px 10px; 
-    border-radius: 6px; 
-    cursor: pointer; 
-    font-weight: 600;
-}
-
-.navbar button.signup {
-    background: var(--accent, #00aaff);
-    border-color: transparent;
-    color: #fff; 
 }
 
 .container { 
@@ -216,4 +216,14 @@
 .footer img {
     vertical-align: middle;
     margin-right: 10px;
+}
+
+:root {
+    --site-font: Arial, Helvetica, sans-serif;
+    --site-weight: 400;
+}
+
+body, button, input, textarea, select, a, p, h1, h2, h3, h4, h5, h6, span, li, label, div {
+    font-family: var(--site-font) !important;
+    font-weight: var(--site-weight) !important;
 }
