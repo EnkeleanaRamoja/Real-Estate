@@ -189,8 +189,8 @@
 
       document.getElementById("errorMsg").style.display = "none";
 
-      const registeredEmail = localStorage.getItems('registeredEmail');
-      const registeredPassword = localStorage.getItems('registeredPassword');
+      const registeredEmail = localStorage.getItem('registeredEmail');
+      const registeredPassword = localStorage.getItem('registeredPassword');
 
       console.log('User input:', user);
       console.log('Stored email:', registeredEmail);
@@ -211,6 +211,5 @@
       }
     }
   </script>
-
 </body>
 </html>
