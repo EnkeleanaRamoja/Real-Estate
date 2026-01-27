@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+    <div class="login-card">
+        <h2>Administrator Login</h2>
+        <p>Restricted Access</p>
+
+        <input type="text" placeholder="Admin Username">
+        <input type="password" placeholder="Password">
+
+        <button onclick="location.href='dashboard.html'">Login</button>
+
+        <span class="hint">Only administrators are allowed</span>
+    </div>
+
+</body>
+</html>
