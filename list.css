@@ -53,6 +53,19 @@ html, body {
     cursor: pointer;
 }
 
+/* Keep the services dropdown aligned with other navbar items */
+.navbar .dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .dropbtn {
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
 /* Dropdown box */
 .dropdown-content {
     display: none;
@@ -62,6 +75,11 @@ html, body {
     border-radius: 6px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.5);
     z-index: 100;
+
+    /* position the dropdown directly below the Services button */
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
 }
 
 .dropdown-content a {

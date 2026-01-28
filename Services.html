@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="service.css">
+    <title>Services | Real Estate </title>
+</head>
+    <body style="background-color: rgb(45, 61, 45);">
+    <section class="hero">
+        <header class="header">
+            <h1>Real Estate</h1>
+            <nav class="navbar">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <div class="dropdown">
+                    <a href="Services.html" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#buying">Buying</a>
+                        <a href="#selling">Selling</a>
+                        <a href="#investing">Investing</a>
+                    </div>
+                </div>
+                <a href="Listings.html">Listings</a>
+                <a href="Contact.html">Contact</a>
+                <a href="main.html" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
+            </nav>
+        </header>
+
+        <h1 class="service">Services</h1>
+        <p class="serviceP">At Our Real Estate, we provide expert real estate services designed to help you make confident, profitable decisions—whether you’re buying your first home, selling a property, or building a smart investment portfolio. Our team combines local market knowledge, strategic insight, and personalized service to guide you every step of the way.</p>
+        <img class="srvc" src="service.png" width="450px" height="auto">
+    </section>
+
+    <div class="services-slider">
+  <div class="slider-track">
+    
+    <div class="slide active">
+      <h3>Buying</h3>
+      <p style="text-align: justify;">
+        Finding the right home is more than a transaction—it’s a milestone. We make the buying process smooth, transparent, and stress-free.
+        Our buying services include:
+        Personalized property searches based on your needs and budget
+        Expert guidance on neighborhoods, pricing, and market trends
+        Private and virtual property showings
+        Skilled negotiation to secure the best possible price
+        Support from offer to closing, including inspections and financing coordination
+        Whether you’re a first-time buyer or upgrading to your next home, we’re here to help you buy with confidence.
+      </p>
+      <a href="#buying" class="slide-btn">Learn More</a>
+    </div>
+
+    <div class="slide">
+      <h3>Investment</h3>
+      <p style="text-align: justify;">
+        When it’s time to sell, strategy matters. We focus on maximizing your property’s value while ensuring a fast and seamless sale.
+        Our selling services include:
+        Accurate home valuation and pricing strategy
+        Professional marketing, photography, and listing exposure
+        Targeted online and offline promotion
+        Buyer screening and offer management
+        Expert negotiation and full transaction support through closing
+        Our goal is simple: to sell your property for top value with minimal stress.
+      </p>
+      <a href="#investment" class="slide-btn">Learn More</a>
+    </div>
+
+    <div class="slide">
+      <h3>Selling</h3>
+      <p style="text-align: left;">
+        Smart real estate investing starts with the right information and guidance. We help investors identify opportunities that align with their financial goals.
+<br>
+Our investment services include:
+<br>
+- Market analysis and investment property sourcing<br>
+- ROI, cash flow, and long-term growth evaluations<br>
+- Residential and rental property guidance<br>
+- Support for new and experienced investors<br>
+- Strategic advice for portfolio growth and risk management.<br>
+
+Whether you’re building your first investment or expanding your portfolio, we help you invest wisely.
+      </p>
+      <a href="#selling" class="slide-btn">Learn More</a>
+    </div>
+
+  </div>
+
+  <div class="slider-controls">
+    <button onclick="prevSlide()">‹</button>
+    <button onclick="nextSlide()">›</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+  const track = document.querySelector(".slider-track");
+
+  function updateSlide() {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateSlide();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateSlide();
+  }
+</script>

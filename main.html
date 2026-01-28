@@ -13,6 +13,7 @@
             <nav class="navbar">
                 <a href="main.html">Home</a>
                 <a href="#">About</a>
+                <a href="#">Services</a>
                 <a href="#">Listings</a>
                 <a href="#">Contact</a>
             </nav>
@@ -26,3 +27,21 @@
             </div>
         </div>
     </section>
+    <script>
+    function toggleDropdown(event) {
+        event.preventDefault();
+        const dropdown = event.target.parentElement;
+        const content = dropdown.querySelector('.dropdown-content');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+
+    document.addEventListener('click', function(event) {
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            if (!dropdown.contains(event.target)) {
+                const c = dropdown.querySelector('.dropdown-content');
+                if (c) c.style.display = 'none';
+            }
+        });
+    });
+    </script>

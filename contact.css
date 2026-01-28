@@ -40,6 +40,60 @@ html, body {
     gap: 22px;
 }
 
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Keep the services dropdown aligned with other navbar items */
+.navbar .dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar .dropbtn {
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+/* Dropdown box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f2b1f;
+    min-width: 160px;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2d3d2d;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
 .navbar a {
     color: #ffffff;
     text-decoration: none;
