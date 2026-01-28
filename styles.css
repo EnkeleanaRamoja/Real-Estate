@@ -89,6 +89,118 @@
     transition: all 0.3s ease;
 }
 
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Services button */
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Dropdown box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f2b1f;
+    min-width: 160px;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2d3d2d;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 16px 20px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        margin-right: 0 !important;
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .view {
+        margin-right: 0 !important;
+    }
+
+    .hero .container {
+        padding: 40px 20px;
+    }
+
+    .main .main-image {
+        width: 100%;
+        max-width: 500px;
+        left: 0;
+        top: auto;
+        transform: none;
+    }
+
+    .main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info, .info1 {
+        position: relative !important;
+        width: 90% !important;
+        height: auto !important;
+        left: auto !important;
+        right: auto !important;
+        top: auto !important;
+        transform: none !important;
+        margin: 20px auto;
+    }
+
+    .main-image1 {
+        position: relative;
+        width: 90% !important;
+        height: auto !important;
+        right: auto !important;
+        top: auto !important;
+        transform: none !important;
+        margin: 20px auto;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+}
+
+
 .login:hover,
 .signup:hover {
     background: rgba(255,255,255,0.1) !important;
