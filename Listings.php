@@ -13,19 +13,12 @@
     <header class="header">
         <h1>Real Estate</h1>
         <nav class="navbar">
-            <a href="Home.html">Home</a>
-            <a href="About.html">About</a>
-            <div class="dropdown">
-                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
-                <div class="dropdown-content">
-                    <a href="#buying">Buying</a>
-                    <a href="#selling">Selling</a>
-                    <a href="#investing">Investing</a>
-                </div>
-            </div>
-            <a href="Listings.html" class="active">Listings</a>
-            <a href="Contact.html">Contact</a>
-            <a href="main.html" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
+            <a href="Home.php">Home</a>
+            <a href="About.php">About</a>
+            <a href="Services.php">Services</a>
+            <a href="Listings.php" class="active">Listings</a>
+            <a href="Contact.php">Contact</a>
+            <a href="main.php" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
         </nav>
     </header>
 
@@ -73,7 +66,7 @@
                         <span><i class="fas fa-bath"></i> 3 Baths</span>
                         <span><i class="fas fa-ruler-combined"></i> 280 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -93,7 +86,7 @@
                         <span><i class="fas fa-bath"></i> 2 Bath</span>
                         <span><i class="fas fa-ruler-combined"></i> 110 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -112,7 +105,7 @@
                         <span><i class="fas fa-building"></i> Office</span>
                         <span><i class="fas fa-ruler-combined"></i> 240 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -137,7 +130,7 @@
                         <span><i class="fas fa-bath"></i> 4 Baths</span>
                         <span><i class="fas fa-ruler-combined"></i> 340 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -157,7 +150,7 @@
                         <span><i class="fas fa-bath"></i> 1 Bath</span>
                         <span><i class="fas fa-ruler-combined"></i> 90 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -176,7 +169,7 @@
                         <span><i class="fas fa-building"></i> Office</span>
                         <span><i class="fas fa-ruler-combined"></i> 190 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -201,7 +194,7 @@
                         <span><i class="fas fa-bath"></i> 3 Baths</span>
                         <span><i class="fas fa-ruler-combined"></i> 320 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -221,7 +214,7 @@
                         <span><i class="fas fa-bath"></i> 1 Bath</span>
                         <span><i class="fas fa-ruler-combined"></i> 65 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -240,7 +233,7 @@
                         <span><i class="fas fa-building"></i> Office</span>
                         <span><i class="fas fa-ruler-combined"></i> 210 m²</span>
                     </div>
-                    <a href="Contact.html" class="btn">Book Now</a>
+                    <a href="Contact.php" class="btn">Book Now</a>
                 </div>
             </div>
 
@@ -251,7 +244,7 @@
     <section class="cta">
         <h2>Can’t find what you’re looking for?</h2>
         <p>Our agents are ready to help you find the perfect property.</p>
-        <a href="Contact.html" class="btn">Contact Us</a>
+        <a href="Contact.php" class="btn">Contact Us</a>
     </section>
 
 </section>

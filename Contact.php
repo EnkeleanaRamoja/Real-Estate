@@ -13,19 +13,12 @@
     <header class="header">
         <h1>Real Estate</h1>
         <nav class="navbar">
-            <a href="Home.html">Home</a>
-            <a href="About.html">About</a>
-            <div class="dropdown">
-                <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
-                <div class="dropdown-content">
-                    <a href="#buying">Buying</a>
-                    <a href="#selling">Selling</a>
-                    <a href="#investing">Investing</a>
-                </div>
-            </div>
-            <a href="Listings.html">Listings</a>
-            <a href="Contact.html" class="active">Contact</a>
-            <a href="main.html" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
+            <a href="Home.php">Home</a>
+            <a href="About.php">About</a>
+            <a href="Services.php">Services</a>
+            <a href="Listings.php">Listings</a>
+            <a href="Contact.php" class="active">Contact</a>
+            <a href="main.php" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
         </nav>
     </header>
     <div class="page-title">

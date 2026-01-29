@@ -12,19 +12,12 @@
     <header class="header">
         <h1>Real Estate</h1>
         <nav class="navbar">
-          <a href="Home.html">Home</a>
-          <a href="About.html" class="active">About</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
-            <div class="dropdown-content">
-              <a href="#buying">Buying</a>
-              <a href="#selling">Selling</a>
-              <a href="#investing">Investing</a>
-            </div>
-          </div>
-          <a href="Listings.html">Listings</a>
-          <a href="Contact.html">Contact</a>
-          <a href="main.html" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
+          <a href="Home.php">Home</a>
+          <a href="About.php" class="active">About</a>
+          <a href="Services.php">Services</a>
+          <a href="Listings.php">Listings</a>
+          <a href="Contact.php">Contact</a>
+          <a href="main.php" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
         </nav>
     </header>
 
@@ -33,7 +26,7 @@
       <h2 style="color: white;">Our Mission</h2>
       <p>We provide the best real estate solutions for buyers, sellers, and investors. Our dedicated team ensures a seamless and professional experience from start to finish.</p>
       <p>With years of experience in the real estate industry, we pride ourselves on transparency, trust, and excellent customer service.</p>
-      <button><a href="Listings.html" style="color: white; text-decoration: none;">Explore Listings</a></button>
+      <button><a href="Listings.php" style="color: white; text-decoration: none;">Explore Listings</a></button>
     </div>
     <div class="about-image">
       <img src="AboutUs.png" alt="About Real Estate">

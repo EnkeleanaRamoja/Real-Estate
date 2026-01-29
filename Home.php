@@ -11,24 +11,24 @@
         <header class="header">
             <h1>Real Estate</h1>
             <nav class="navbar">
-                <a href="Home.html">Home</a>
-                <a href="About.html">About</a>
+                <a href="Home.php" class="active">Home</a>
+                <a href="About.php">About</a>
                 <div class="dropdown">
-                    <a href="Services.html" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
+                    <a href="Services.php" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
                     <div class="dropdown-content">
                         <a href="#buying">Buying</a>
                         <a href="#selling">Selling</a>
                         <a href="#investing">Investing</a>
                     </div>
                 </div>
-                <a href="Listings.html">Listings</a>
-                <a href="Contact.html">Contact</a>
-                <a href="main.html" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
+                <a href="Listings.php">Listings</a>
+                <a href="Contact.php">Contact</a>
+                <a href="main.php" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
             </nav>
         </header>
         <div class="container">
             <h2 class="head" style="text-align: left;">Unlock your <br> perfect home</h2>
-            <button class="view"><a style="color: white; text-decoration: none;" href="Listings.html">EXPLORE LISTINGS</a></button>
+            <button class="view"><a style="color: white; text-decoration: none;" href="Listings.php">EXPLORE LISTINGS</a></button>
         </div>
         <br><br><br><br><br><br><br><br><br>
     </section>

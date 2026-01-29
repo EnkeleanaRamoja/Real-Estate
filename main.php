@@ -11,7 +11,7 @@
         <header class="header">
             <h1>Real Estate</h1>
             <nav class="navbar">
-                <a href="main.html">Home</a>
+                <a href="main.php">Home</a>
                 <a href="#">About</a>
                 <a href="#">Services</a>
                 <a href="#">Listings</a>
@@ -22,8 +22,8 @@
             <h2>Your Dream Home Awaits</h2>
             <p style="text-align: center;">Invest today in your dream house.</p>
             <div>
-                <button class="login"><a style="color: white; text-decoration-line: none;" href="login.html">Login</a></button>
-                <button class="signup"><a style="color: white; text-decoration-line: none;" href="register.html">Sign Up</a></button>
+                <button class="login"><a style="color: white; text-decoration-line: none;" href="login.php">Login</a></button>
+                <button class="signup"><a style="color: white; text-decoration-line: none;" href="register.php">Sign Up</a></button>
             </div>
         </div>
     </section>
