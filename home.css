@@ -50,15 +50,17 @@
     gap: 18px;
 }
 .navbar a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 18px;
-    padding: 6px 8px;
-    border-radius: 4px;
-    transition: background .12s, color .12s;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
 }
-.navbar a:hover {
-    background: rgba(255,255,255,0.06);
+
+.navbar a:hover,
+.navbar a.active {
+    background: rgba(255,255,255,0.12);
 }
 
 .navbar button { 
@@ -439,6 +441,69 @@ body, button, input, textarea, select, a, p, h1, h2, h3, h4, h5, h6, span, li, l
     background: #1f291f;
     transform: translateY(-2px);
 }
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Services button */
+.dropbtn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Keep the services dropdown aligned with other navbar items */
+.navbar .dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .dropbtn {
+    display: inline-block;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+/* Dropdown box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1f2b1f;
+    min-width: 160px;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    z-index: 100;
+
+    /* position the dropdown directly below the Services button */
+    top: 100%;
+    left: 0;
+    margin-top: 6px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #2d3d2d;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+    display: block;
+}
+
 
 @media (max-width: 768px) {
     .header {

@@ -11,16 +11,24 @@
         <header class="header">
             <h1>Real Estate</h1>
             <nav class="navbar">
-                <a href="Home.html">Home</a>
-                <a href="#about">About</a>
-                <a href="Listings.html">Listings</a>
-                <a href="Contact.html">Contact</a>
-                <a href="main.html" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
+                <a href="Home.php" class="active">Home</a>
+                <a href="About.php">About</a>
+                <div class="dropdown">
+                    <a href="Services.php" class="dropbtn" onclick="toggleDropdown(event)">Services ▾</a>
+                    <div class="dropdown-content">
+                        <a href="#buying">Buying</a>
+                        <a href="#selling">Selling</a>
+                        <a href="#investing">Investing</a>
+                    </div>
+                </div>
+                <a href="Listings.php">Listings</a>
+                <a href="Contact.php">Contact</a>
+                <a href="main.php" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
             </nav>
         </header>
         <div class="container">
             <h2 class="head" style="text-align: left;">Unlock your <br> perfect home</h2>
-            <button class="view"><a style="color: white; text-decoration: none;" href="Listings.html">EXPLORE LISTINGS</a></button>
+            <button class="view"><a style="color: white; text-decoration: none;" href="Listings.php">EXPLORE LISTINGS</a></button>
         </div>
         <br><br><br><br><br><br><br><br><br>
     </section>
@@ -117,5 +125,24 @@
         </div>
     </div>
 </section>
+
+<script>
+function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.target.parentElement;
+    const content = dropdown.querySelector('.dropdown-content');
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        if (!dropdown.contains(event.target)) {
+            dropdown.querySelector('.dropdown-content').style.display = 'none';
+        }
+    });
+});
+</script>
 </body>
 </html>

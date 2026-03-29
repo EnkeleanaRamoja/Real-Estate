@@ -13,11 +13,12 @@
     <header class="header">
         <h1>Real Estate</h1>
         <nav class="navbar">
-            <a href="Home.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Listings.html">Listings</a>
-            <a href="Contact.html" class="active">Contact</a>
-            <a href="main.html" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
+            <a href="Home.php">Home</a>
+            <a href="About.php">About</a>
+            <a href="Services.php">Services</a>
+            <a href="Listings.php">Listings</a>
+            <a href="Contact.php" class="active">Contact</a>
+            <a href="main.php" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
         </nav>
     </header>
     <div class="page-title">
@@ -79,6 +80,25 @@
     </section>
 
 </section>
+
+<script>
+function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.target.parentElement;
+    const content = dropdown.querySelector('.dropdown-content');
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+}
+
+document.addEventListener('click', function(event) {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        if (!dropdown.contains(event.target)) {
+            const c = dropdown.querySelector('.dropdown-content');
+            if (c) c.style.display = 'none';
+        }
+    });
+});
+</script>
 
 </body>
 </html>

@@ -12,11 +12,12 @@
     <header class="header">
         <h1>Real Estate</h1>
         <nav class="navbar">
-            <a href="Home.html">Home</a>
-            <a href="About.html">About</a>
-            <a href="Listings.html">Listings</a>
-            <a href="Contact.html" class="active">Contact</a>
-            <a href="main.html" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
+          <a href="Home.php">Home</a>
+          <a href="About.php" class="active">About</a>
+          <a href="Services.php">Services</a>
+          <a href="Listings.php">Listings</a>
+          <a href="Contact.php">Contact</a>
+          <a href="main.php" style="background-color: transparent; padding: 8px 16px; border-radius: 4px; color: white; border: 2px solid white;">Logout</a>
         </nav>
     </header>
 
@@ -25,7 +26,7 @@
       <h2 style="color: white;">Our Mission</h2>
       <p>We provide the best real estate solutions for buyers, sellers, and investors. Our dedicated team ensures a seamless and professional experience from start to finish.</p>
       <p>With years of experience in the real estate industry, we pride ourselves on transparency, trust, and excellent customer service.</p>
-      <button><a href="Listings.html" style="color: white; text-decoration: none;">Explore Listings</a></button>
+      <button><a href="Listings.php" style="color: white; text-decoration: none;">Explore Listings</a></button>
     </div>
     <div class="about-image">
       <img src="AboutUs.png" alt="About Real Estate">
@@ -54,5 +55,24 @@
   <footer>
     &copy; 2025 RealEstatePro. All Rights Reserved.
   </footer>
+
+<script>
+function toggleDropdown(event) {
+    event.preventDefault();
+    const dropdown = event.target.parentElement;
+    const content = dropdown.querySelector('.dropdown-content');
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+}
+
+document.addEventListener('click', function(event) {
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        if (!dropdown.contains(event.target)) {
+            const c = dropdown.querySelector('.dropdown-content');
+            if (c) c.style.display = 'none';
+        }
+    });
+});
+</script>
 </body>
 </html>
